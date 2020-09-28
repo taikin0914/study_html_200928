@@ -1,0 +1,157 @@
+<!--I wrote this code 
+    while watching and studying jcode's video.-->
+<!DOCTYPE html>
+<hrml>
+    <head>
+        <title></title>
+    
+        <style>
+            body, button, dd, dl, dt, fieldset, form,
+            h1,h2,h3,h4,h5,h6,li,ol,p,select,table,td,
+            textarea,th,ul{
+                margin:0;
+                padding:0;
+            }
+            body,button,input select,table,textarea{
+                font-size: 12px;
+                font-family: Dotum, '돋음', HElvetica,
+                "Apple SD Gothic Neo", sans-serif;
+            }
+            button, input{
+                border-radius:0;
+            }
+            fieldset,img{
+                border:0;
+            }
+            ol,ul{
+                list-style:none;
+            }
+            address,em{
+                font-style:normal;
+            }
+            a{
+                text-decoration:none;
+            }
+            a:hover{
+                text-decoration: none;
+            }
+            #header{
+                background: #eee;
+                margin-bottom: 20px;
+                height: 100px;
+                /* width: 1000px;
+                margin : 0 auto 20px auto; */
+            }
+            .header_inner{
+                width: 1000px;
+                margin: 0 auto;
+                background: #fff;
+                }
+            #nav{
+                height:40px;
+            /* border은 테두리 */
+            /* 태두리부분에 1px의 줄을 끗겠다 */
+                border-top: 1px solid #efefef;
+                border-bottom: 1px solid #efefef;
+            }
+            .nav_inner{
+                width:1000px;
+                margin:0 auto;
+            }
+            #footer{
+                height: 100px;
+                background: #eee;
+                /* width: 1000px;
+                margin : 0 auto; */
+            }
+            .footer_inner{
+                width: 1000px;
+                margin: 0 auto;
+                background: #fff;                
+            }
+            #content{
+                background: #eee;
+                width: 1000px;
+                margin : 20px auto 20px auto;
+                /* height: 600px; */    
+            }
+            .section_main{
+                width: 700px;
+                background: #ff0;
+                float: left;
+            }
+            .aside{
+                width: 300px;
+                background: #f00;
+                float: left;
+                height: 600px
+            }
+            .section{
+                background: #f0f;
+                height: 300px
+            }
+            .article{
+                background: green;
+                height: 300px
+            }
+            .clearfix{
+                overflow: auto;
+            }
+            .clearfix::after{
+                clear: both; 
+                display: block;
+                content: "";
+            }
+            .navigation_list{
+                float: left;
+                width: 142px;
+        /* text를 위아래로 가운데 정렬할 수 있음 */
+                line-height: 40px;
+        /* text를 가운데 정렬할 수 있음 */
+                text-align: center;
+            }
+            .navigation_list{
+                /* text크기조절 */
+                font-size: 16px;
+                color: #00ab33;
+            }    
+                
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <div class="header_inner">
+                header
+            </div>
+        </div>
+        <div id="nav" class="clearfix">
+            <div class="nav_inner">
+    <!-- class는 안에 두가지 속성을 넣을 수 있다 -->
+                <ul class="navigation clearfix">
+                    <li class="navigation_list"><a href="" class="navigation_link">메뉴1</a></li>
+                    <li class="navigation_list"><a href="" class="navigation_link">메뉴2</a></li>
+                    <li class="navigation_list"><a href="" class="navigation_link">메뉴3</a></li>
+                    <li class="navigation_list"><a href="" class="navigation_link">메뉴4</a></li>
+                    <li class="navigation_list"><a href="" class="navigation_link">메뉴5</a></li>
+                    <li class="navigation_list"><a href="" class="navigation_link">메뉴6</a></li>
+                    <li class="navigation_list"><a href="" class="navigation_link">메뉴7</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="content" class="clearfix">
+            <div class="section_main">
+                <div class="section">section</div>
+                <div class="article">article</div>
+            </div>
+            <div class="aside">aside</div>
+        </div>
+        <div id="footer">
+            <div class="footer_inner">
+                footer
+            </div>
+        </div>
+        
+    </body>
+</hrml>
+<!-- navigation : naver를 예로 들면 매일 카패 블로그
+지식in 등이 쭉 나열되어 있는 부분이다-->
